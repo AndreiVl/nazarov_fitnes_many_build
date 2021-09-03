@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" href="images/favicon.ico">
+      <title>Первые блюда</title>
+      <link href="css/jquery.modal.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet"><!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header--shop">
+        <div class="container">
+          <div class="header__body">
+            <div class="header__logo"><a class="logo" href="/">
+                      <picture><img src="images/logo.png" alt="Logo"></picture></a>
+            </div>
+            <div class="header__right">
+              <div class="header__nav">
+                <div class="header__city">
+                  <select class="city-select">
+                    <option value="select_city">Выберите город</option>
+                    <option value="zlatoust">Златоуст</option>
+                    <option value="chelyabinsk">Челябинск</option>
+                  </select>
+                </div>
+                <div class="header__menu">
+                  <nav class="menu menu--shop">
+                    <ul class="menu__list">
+                      <li><a class="menu__link" href="description.html">Описнаие</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="header__tel"><a href="tel:+74959227206">+7 (495) 922-72-06</a></div>
+              </div>
+            </div>
+            <div class="header__basket"><a class="header__basket-body" href="/order.html">
+                      <svg class="icon icon--basket icon--29">
+                        <use xlink:href="images/icons.svg#icon--basket"></use>
+                      </svg><span class="header__basket-number">0</span></a></div>
+            <button class="header__btn" type="button"><span class="visually-hidden">Открыть меню</span><span class="header__btn-visual"> </span></button>
+          </div>
+        </div>
+      </header>
+      <section class="main-store">
+        <div class="container">
+          <div class="row">
+            <div class="col-12"> 
+              <h1 class="h1-36 main-store__title">Первые блюда</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-8 order-2 order-lg-1">
+              <ul class="main-store__catalog">
+                <li class="main-store__catalog-item">
+                        <div class="shop-item" id="borshch_s_mitbolami"><span class="shop-item__calories">252,2 ккал</span>
+                          <div class="shop-item__body"><a href="/borshch_s_mitbolami"><img class="shop-item__img" src="images/borshch_s_mitbolami.png" alt="Борщ"></a><a class="shop-item__title" href="/borshch_s_mitbolami">Борщ</a>
+                            <p class="shop-item__desc">Борщ с митболами из говядины белковыми</p>
+                          </div>
+                          <div class="shop-item__action">
+                            <div class="shop-item__price"><span>0</span>.00 ₽</div>
+                                  <button class="btn btn--blue addToCart" data-id="borshch_s_mitbolami" type="button"><span class="btn__text">В корзину</span>
+                                  </button>
+                          </div>
+                        </div>
+                </li>
+                <li class="main-store__catalog-item">
+                        <div class="shop-item" id="solyanka_s_mitbolami"><span class="shop-item__calories">258 ккал</span>
+                          <div class="shop-item__body"><a href="/solyanka_s_mitbolami"><img class="shop-item__img" src="images/solyanka_s_mitbolami.png" alt="Солянка"></a><a class="shop-item__title" href="/solyanka_s_mitbolami">Солянка</a>
+                            <p class="shop-item__desc">Солянка с митболами из говядины белковыми</p>
+                          </div>
+                          <div class="shop-item__action">
+                            <div class="shop-item__price"><span>0</span>.00 ₽</div>
+                                  <button class="btn btn--blue addToCart" data-id="solyanka_s_mitbolami" type="button"><span class="btn__text">В корзину</span>
+                                  </button>
+                          </div>
+                        </div>
+                </li>
+                <li class="main-store__catalog-item">
+                        <div class="shop-item" id="suplapsha_s_mitbolami"><span class="shop-item__calories">348,5 ккал</span>
+                          <div class="shop-item__body"><a href="/suplapsha_s_mitbolami"><img class="shop-item__img" src="images/suplapsha_s_mitbolami.png" alt="Суп лапша куриная"></a><a class="shop-item__title" href="/suplapsha_s_mitbolami">Суп лапша куриная</a>
+                            <p class="shop-item__desc">Суп-лапша с митболами из курицы белковыми</p>
+                          </div>
+                          <div class="shop-item__action">
+                            <div class="shop-item__price"><span>0</span>.00 ₽</div>
+                                  <button class="btn btn--blue addToCart" data-id="suplapsha_s_mitbolami" type="button"><span class="btn__text">В корзину</span>
+                                  </button>
+                          </div>
+                        </div>
+                </li>
+                <li class="main-store__catalog-item">
+                        <div class="shop-item" id="lagman_s_mitbolami"><span class="shop-item__calories">266,2 ккал</span>
+                          <div class="shop-item__body"><a href="/lagman_s_mitbolami"><img class="shop-item__img" src="images/lagman_s_mitbolami.png" alt="Лагман"></a><a class="shop-item__title" href="/lagman_s_mitbolami">Лагман</a>
+                            <p class="shop-item__desc">Лагман с митболами из говядины белковыми</p>
+                          </div>
+                          <div class="shop-item__action">
+                            <div class="shop-item__price"><span>0</span>.00 ₽</div>
+                                  <button class="btn btn--blue addToCart" data-id="lagman_s_mitbolami" type="button"><span class="btn__text">В корзину</span>
+                                  </button>
+                          </div>
+                        </div>
+                </li>
+                <li class="main-store__catalog-item">
+                        <div class="shop-item" id="tom_yam_s_fishbolami"><span class="shop-item__calories">302,2 ккал</span>
+                          <div class="shop-item__body"><a href="/tom_yam_s_fishbolami"><img class="shop-item__img" src="images/tom_yam_s_fishbolami.png" alt="Том Ям"></a><a class="shop-item__title" href="/tom_yam_s_fishbolami">Том Ям</a>
+                            <p class="shop-item__desc">Том Ям с фишболами из лосося белковыми</p>
+                          </div>
+                          <div class="shop-item__action">
+                            <div class="shop-item__price"><span>0</span>.00 ₽</div>
+                                  <button class="btn btn--blue addToCart" data-id="tom_yam_s_fishbolami" type="button"><span class="btn__text">В корзину</span>
+                                  </button>
+                          </div>
+                        </div>
+                </li>
+                <li class="main-store__catalog-item">
+                        <div class="shop-item" id="tom_kkha_s_mitbolami"><span class="shop-item__calories">275,9 ккал</span>
+                          <div class="shop-item__body"><a href="/tom_kkha_s_mitbolami"><img class="shop-item__img" src="images/tom_kkha_s_mitbolami.png" alt="Том Кха"></a><a class="shop-item__title" href="/tom_kkha_s_mitbolami">Том Кха</a>
+                            <p class="shop-item__desc">Том Кха с митболами из курицы белковыми</p>
+                          </div>
+                          <div class="shop-item__action">
+                            <div class="shop-item__price"><span>0</span>.00 ₽</div>
+                                  <button class="btn btn--blue addToCart" data-id="tom_kkha_s_mitbolami" type="button"><span class="btn__text">В корзину</span>
+                                  </button>
+                          </div>
+                        </div>
+                </li>
+                <li class="main-store__catalog-item">
+                        <div class="shop-item" id="ma_po_tofu_s_farshem"><span class="shop-item__calories">271,1 ккал</span>
+                          <div class="shop-item__body"><a href="/ma_po_tofu_s_farshem"><img class="shop-item__img" src="images/ma_po_tofu_s_farshem.png" alt="Ма По Тофу"></a><a class="shop-item__title" href="/ma_po_tofu_s_farshem">Ма По Тофу</a>
+                            <p class="shop-item__desc">Ма По Тофу с фаршем из говядины белковым</p>
+                          </div>
+                          <div class="shop-item__action">
+                            <div class="shop-item__price"><span>0</span>.00 ₽</div>
+                                  <button class="btn btn--blue addToCart" data-id="ma_po_tofu_s_farshem" type="button"><span class="btn__text">В корзину</span>
+                                  </button>
+                          </div>
+                        </div>
+                </li>
+                <li class="main-store__catalog-item">
+                        <div class="shop-item" id="fo_s_mitbolami"><span class="shop-item__calories">348,7 ккал</span>
+                          <div class="shop-item__body"><a href="/fo_s_mitbolami"><img class="shop-item__img" src="images/fo_s_mitbolami.png" alt="Фо с митболами"></a><a class="shop-item__title" href="/fo_s_mitbolami">Фо с митболами</a>
+                            <p class="shop-item__desc">Фо с митболами из говядины белковыми</p>
+                          </div>
+                          <div class="shop-item__action">
+                            <div class="shop-item__price"><span>0</span>.00 ₽</div>
+                                  <button class="btn btn--blue addToCart" data-id="fo_s_mitbolami" type="button"><span class="btn__text">В корзину</span>
+                                  </button>
+                          </div>
+                        </div>
+                </li>
+                <li class="main-store__catalog-item">
+                        <div class="shop-item" id="miso_s_fishbolami"><span class="shop-item__calories">213,7 ккал</span>
+                          <div class="shop-item__body"><a href="/miso_s_fishbolami"><img class="shop-item__img" src="images/miso_s_fishbolami.png" alt="Мисо"></a><a class="shop-item__title" href="/miso_s_fishbolami">Мисо</a>
+                            <p class="shop-item__desc">Мисо с фишболами из лосося белковыми</p>
+                          </div>
+                          <div class="shop-item__action">
+                            <div class="shop-item__price"><span>0</span>.00 ₽</div>
+                                  <button class="btn btn--blue addToCart" data-id="miso_s_fishbolami" type="button"><span class="btn__text">В корзину</span>
+                                  </button>
+                          </div>
+                        </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-4 order-1 order-lg-2">
+              <div class="main-store__sidebar">
+                <div class="shop-sidebar">
+                  <div class="shop-sidebar__header">
+                    <h2 class="h2-22 shop-sidebar__title">Ваш заказ</h2>
+                  </div>
+                  <div class="shop-sidebar__body">
+                    <ul class="shop-sidebar__list" id="shopSidebarList"></ul>
+                  </div>
+                  <div class="shop-sidebar__footer">
+                    <ul class="shop-sidebar__footer-list">
+                      <li class="shop-sidebar__footer-item"><span class="text-16-2">Доставка:</span><span class="text-16-2 shop-sidebar__footer-delivery">0 ₽</span></li>
+                      <li class="shop-sidebar__footer-item"><span class="text-16-2 text-16-2--black">Итого:</span><span class="text-16-2 text-16-2--black shop-sidebar__footer-total">0 ₽</span></li>
+                    </ul>
+                    <button class="btn shop-sidebar__claer" id="clearData">Очистить список</button><a class="btn btn--outline btn--red-outline" href="/order.html" role="button"><span class="btn__text">Оформить заказ</span></a>
+                    <div class="shop-sidebar__footer-img"><img src="images/shop-sidebar__img-01.jpg" alt="Бесплатная доставка"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-store__subscription">
+          <div class="subscription-form">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-10 offset-md-1">
+                  <div class="subscription-form__body">
+                    <div class="subscription-form__left">
+                      <h2 class="h2-32 subscription-form__title">Получи скидку <span>10%</span></h2>
+                      <p class="text-14 text-14--color-1">Скидка на второй заказ при покупке от 12 порций</p>
+                    </div>
+                    <div class="subscription-form__rigt">
+                      <div class="form-subscription">
+                        <form class="form-subscription__form" action="#" method="post">
+                          <div class="form-subscription__form-item">
+                                  <div class="input input--form">
+                                    <input class="input__input" type="email" name="email_client" id="email_client" placeholder="Ваш Email">
+                                  </div>
+                          </div>
+                          <div class="form-subscription__form-item">
+                                  <button class="btn btn--black" type="submit"><span class="btn__text">отправить</span>
+                                  </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-store__delivery">
+          <div class="delivery">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h2 class="h2-32 delivery__title">Доставка</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-4">
+                  <div class="delivery-item">
+                          <div class="item-delivery">
+                            <div class="item-delivery__value">01</div>
+                            <p class="item-delivery__desc">Доставка осуществляется после подтверждения заказа и согласования даты и времени.</p>
+                          </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="delivery-item">
+                          <div class="item-delivery">
+                            <div class="item-delivery__value">02</div>
+                            <p class="item-delivery__desc">Курьеры обеспечены медицинскими масками и санитайзерами для обработки рук.</p>
+                          </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="delivery-item">
+                          <div class="item-delivery">
+                            <div class="item-delivery__value">03</div>
+                            <p class="item-delivery__desc">За 30 минут до приезда курьер позвонит Вам для подтверждения доставки.</p>
+                          </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="delivery-item">
+                          <div class="item-delivery">
+                            <div class="item-delivery__value">04</div>
+                            <p class="item-delivery__desc">Все сотрудники склада и службы доставки проходят ежедневные медосмотры.</p>
+                          </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="delivery-item">
+                          <div class="item-delivery">
+                            <div class="item-delivery__value">05</div>
+                            <p class="item-delivery__desc">На складе и во время доставки соблюдается необходимый температурный режим</p>
+                          </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="delivery-item">
+                          <div class="item-delivery">
+                            <div class="item-delivery__value">06</div>
+                            <p class="item-delivery__desc">Вся продукция герметично упакована, транспортная тара опломбирована.</p>
+                          </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="footer footer--in">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="footer__text">
+                <p class="text">© 2020, ООО «ГРАНД»</p>
+                <p class="text">Все права защищены</p>
+                <p class="text">Юридический адрес: 456200, Челябинская область, г. Златоуст, ул. Косотурская, д. 17,</p>
+                <p class="text">тел. +7 (351) 362-00-67, +7 (351) 362-00-80</p>
+              </div><br>
+              <p class="text text--sm">Изготовитель вправе менять комплектацию и характеристики товара без предварительного уведомления. </p>
+              <p class="text text--sm">Пожалуйста, уточняйте информацию у менеджеров.</p>
+              <p class="text text--sm">Интернет ресурс носит исключительно информационный характер и не является публичной офертой, определяемой положениями ст. 437 Гражданского кодекса РФ.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal city" id="cityNameModal">
+        <div class="modal-form__body">
+          <p class="modal-form__title">Выбор города</p>
+          <select class="city-select">
+            <option value="select_city">Выберите город</option>
+            <option value="zlatoust">Златоуст</option>
+            <option value="chelyabinsk">Челябинск</option>
+          </select>
+          <p class="modal-form__desc">Если вашего города нет в списке, значит наша компания не осуществляет доставку в вашем регионе. Приносим свои извинения и надеемся, что в скором времени мы откроем в вашем городе представительство.</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>$(document).ready(function () {	svg4everybody({});});</script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

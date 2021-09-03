@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" href="images/favicon.ico">
+      <title>Назаров Фитнес</title>
+      <link href="css/jquery.modal.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet"><!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <div class="header__logo"><a class="logo" href="/">
+                      <picture><img src="images/logo.png" alt="Logo"></picture></a>
+            </div>
+            <div class="header__right">
+              <div class="header__nav">
+                <div class="header__menu">
+                  <nav class="menu menu--main">
+                    <ul class="menu__list">
+                      <li><a class="menu__link" href="#description">Почему мы</a></li>
+                      <li><a class="menu__link" href="#info">О проекте</a></li>
+                      <li><a class="menu__link" href="#menu-product">Меню</a></li>
+                      <li><a class="menu__link" href="#where-to-ge">Где приобрести</a></li>
+                      <li><a class="menu__link" href="#contacts">Контакты</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="header__tel"><a href="tel:+74959227206">+7 (495) 922-72-06</a></div>
+              </div>
+            </div>
+            <button class="header__btn" type="button"><span class="visually-hidden">Открыть меню</span><span class="header__btn-visual"></span></button>
+          </div>
+        </div>
+      </header>
+      <section class="top" id="top">
+        <div class="top__wrapper-bg">
+          <div class="container">
+            <div class="row">
+              <dic class="col-12 col-lg-7">
+                <div class="top__info">
+                  <h1 class="h1">ПИТАНИЕ ЧЕМПИОНОВ</h1>
+                  <p class="subtitle">УСТАЛИ ДОБЫВАТЬ БЕЛОК ИЗ СЛАДКИХ КОКТЕЙЛЕЙ?</p>
+                  <p class="lead">Попробуйте новинку&nbsp;&mdash; уникальные блюда премиального качества Назаров Фитнес! 25&nbsp;грамм белка в&nbsp;каждой порции!</p>
+                  <div class="top__action"><a class="btn modal-link" href="#modal_contact" role="button"><span class="btn__text">Стать дистрибьютером</span></a><a class="btn btn--outline" href="/shop.html" role="button"><span class="btn__text">Интернет магазин</span></a>
+                  </div>
+                </div>
+              </dic>
+            </div>
+          </div>
+        </div>
+        <div class="top__product_components">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="top__product_components-item">
+                        <div class="product-component">
+                          <div class="product-component__img"><img src="images/product-component__img-01.png" alt="хранение"></div>
+                          <h2 class="product-component__title">180 суток при минус 18&#176;С</h2>
+                          <p class="product-component__text">Срок хранения продукции 180 суток при температуре не&nbsp;выше&nbsp;&minus;18&#176;С</p>
+                        </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="top__product_components-item">
+                        <div class="product-component">
+                          <div class="product-component__img"><img src="images/product-component__img-02.png" alt="приготовление"></div>
+                          <h2 class="product-component__title">РАЗОГРЕВ В&nbsp;СВЧ-ПЕЧИ</h2>
+                          <p class="product-component__text">Не&nbsp;нужно готовить. Просто разогрейте в&nbsp;микроволновке, в&nbsp;духовом шкафу или на&nbsp;плите</p>
+                        </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="top__product_components-item">
+                        <div class="product-component">
+                          <div class="product-component__img"><img src="images/product-component__img-03.png" alt="состав"></div>
+                          <h2 class="product-component__title">100% НАТУРАЛЬНЫЙ СОСТАВ</h2>
+                          <p class="product-component__text">Без ГМО, консервантов, искусственных красителей, ароматизаторов, усилителей вкуса</p>
+                        </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="top__product_components-item">
+                        <div class="product-component">
+                          <div class="product-component__img"><img src="images/product-component__img-04.png" alt="экономия"></div>
+                          <h2 class="product-component__title">ЭКОНОМИЯ  СРЕДСТВ</h2>
+                          <p class="product-component__text">Можно заложить в&nbsp;морозильник &laquo;про запас&raquo; и&nbsp;использовать по&nbsp;необходимости</p>
+                        </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="description" id="description">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="h2">ПОЧЕМУ НАЗАРОВ ФИТНЕС?</h2>
+            </div>
+          </div>
+        </div>
+        <div class="description__body">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-12 col-lg-6 col-xl-8"><img class="img" src="images/description__img-01.jpg" alt="Дмитрий Назаров" title="Дмитрий Назаров"></div>
+              <div class="col-12 col-md-12 col-lg-6 col-xl-4">
+                <p class="text"> <span class="description__text-blue"> <b>Дмитрий Назаров</b></span>&nbsp;&mdash; вице-чемпион Москвы и&nbsp;Московской области по&nbsp;бодибилдингу, абсолютный чемпион Смоленской области, абсолютный чемпион по&nbsp;версии CROCUS FITNESS CUP 2018&nbsp;года.</p>
+                <p class="text">Дмитрий работает тренером в&nbsp;одном из&nbsp;фитнес-клубов Москвы.</p>
+                <p class="text">Именно благодаря его энтузиазму и&nbsp;творческому подходу родился этот проект!</p>
+                <p class="text">Багаж накопленных знаний по&nbsp;функциональному питанию лег в&nbsp;основу разработки ассортимента блюд не&nbsp;только для спортсменов, но&nbsp;и&nbsp;для всех людей, стремящихся соблюдать необходимый баланс белков, жиров и&nbsp;углеводов, потребляемых в&nbsp;течение дня.</p>
+                <p class="text">Производство блюд Назаров Фитнес осуществляет <span class="description__text-blue"> <b>компания ГРАНД</b></span>, расположенная в&nbsp;городе Златоусте Челябинской области.</p>
+                <p class="text">Сегодня компания ГРАНД&nbsp;&mdash; это современное новое оборудование, просторные цеха и&nbsp;опытный персонал.</p>
+                <p class="text">Специалисты, работающие в&nbsp;этой компании, еще в&nbsp;далеком 2006 году впервые в&nbsp;России освоили технологию производства быстрозамороженных первых блюд. И&nbsp;вновь прорыв!</p>
+                <p class="text">Компания ГРАНД предлагает уникальную инновацию, которая превращает любимые блюда в&nbsp;настоящий суперфуд!</p>
+                <p class="text">Назаров Фитнес использует только органические продукты для своих блюд.</p>
+                <p class="text">Оригинальные пасты и соусы для блюд азиатской кухни напрямую импортируются от лучших мировых производителей. </p>
+                <p class="text">Мы&nbsp;тщательно отбираем поставщиков, и&nbsp;поэтому вся наша продукция производится <span class="description__text-blue"><b>без усилителей вкуса, ГМО</b></span>, искусственных красителей, ароматизаторов и&nbsp;консервантов!</p>
+                <p class="text">Это на&nbsp;100% натуральные блюда!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="description__bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="description__item"><img src="images/description__img-item-01.png" alt="производство">
+                  <p class="description__text">СОБСТВЕННОЕ ПРОИЗВОДСТВО</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="description__item"><img src="images/description__img-item-02.png" alt="разработка">
+                  <p class="description__text">АВТОРСКАЯ РАЗРАБОТКА</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="description__item"><img src="images/description__img-item-03.png" alt="упаковка">
+                  <p class="description__text">ЭКОЛОГИЧНАЯ УПАКОВКА</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info" id="info">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="h2">о проекте</h2>
+            </div>
+          </div>
+        </div>
+        <div class="info__body">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-7 col-xl-6">
+                <div class="info__img"><img src="images/info__img-left.jpg" alt="Дмитрий Назаров" title="Дмитрий Назаров"></div>
+              </div>
+              <div class="col-12 col-lg-5 col-xl-6">
+                <p class="lead">Назаров Фитнес&nbsp;&mdash; это уникальный симбиоз проверенных временем&nbsp;пищевых технологий и&nbsp;быстрорастущей рыночной ниши&nbsp;&mdash; индустрии фитнеса и&nbsp;здорового питания.</p>
+                <p class="text">Приходилось&nbsp;ли Вам когда-либо заниматься в&nbsp;фитнес-клубах, или просто контролировать количество потребляемых калорий, белков, жиров и&nbsp;углеводов?</p>
+                <p class="text">Если&nbsp;да, тогда&nbsp;Вы понимаете, как сложно набрать необходимое количество белка в&nbsp;течение дня или сразу после тренировки.</p>
+                <p class="text">Как правило, эта проблема решается легко и&nbsp;просто сухими белковыми коктейлями и&nbsp;шейкером. Достаточно эффективно, но&nbsp;через непродолжительное время голод вновь дает о&nbsp;себе знать. Да&nbsp;и&nbsp;сладкие коктейли&nbsp;&mdash; скорее временная пищевая заплатка, чем полноценный прием пищи.</p>
+                <p class="text">Назаров Фитнес&nbsp;&mdash; первая российская франшиза, которая позволяет зарабатывать деньги на&nbsp;предоставлении всем желающим полноценного питания ресторанного уровня, обогащенного высококачественным белком животного, сывороточного, яичного и&nbsp;растительного происхождения!</p>
+                <p class="text">Наши блюда притягивают, как магнит. Попробовав раз, через неделю возникает стойкое желание приобрести вновь! И&nbsp;в&nbsp;каждой порции 25&nbsp;грамм белка!</p>
+                <p class="text">Инновация от&nbsp;нашей компании заключается в&nbsp;особой форме подачи белка. Мы&nbsp;разработали вкусные, насыщенные белком митболы и&nbsp;фишболы, которые составляют &laquo;мясную&raquo; и&nbsp;&laquo;рыбную&raquo; компоненту наших блюд!</p>
+                <p class="text">Теперь можно наслаждаться любимым Том Ямом или Фо&nbsp;Бо, Лагманом или Борщом, но&nbsp;при этом добавить в&nbsp;свой рацион необходимый белок!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="info__lead">
+                <p class="lead">И&nbsp;самое главное, не&nbsp;нужно покупать дорогие рационы от&nbsp;завтрака до&nbsp;ужина,</p>
+                <p class="lead">ведь наши блюда хранятся в&nbsp;морозильнике и&nbsp;употребляются по&nbsp;мере необходимости.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info__bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="info__item"><img src="images/info__img-item-01.png" alt="митболы из говядины">
+                  <h3 class="info__item-title">митболы из&nbsp;говядины</h3>
+                  <p class="info__item-text">натуральный белок говядины <br>сывороточный белок <br>яичный белок</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="info__item"><img src="images/info__img-item-02.png" alt="митболы из курицы">
+                  <h3 class="info__item-title">митболы из&nbsp;курицы</h3>
+                  <p class="info__item-text">натуральный белок курицы <br>сывороточный белок <br>яичный белок</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="info__item"><img src="images/info__img-item-03.png" alt="фишболы из лосося">
+                  <h3 class="info__item-title">фишболы из&nbsp;лосося</h3>
+                  <p class="info__item-text">натуральный белок рыбы<br>сывороточный белок<br>яичный белок</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="menu-product" id="menu-product">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="menu-product__body">
+                <h2 class="h2">НАШЕ МЕНЮ</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="menu-product__item"><img class="menu-product__item-img" src="images/menu-product__img-iten-01.png" alt="ЛАГМАН" title="ЛАГМАН">
+                <h3 class="menu-product__item-title">ЛАГМАН</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="menu-product__item"><img class="menu-product__item-img" src="images/menu-product__img-iten-02.png" alt="СОЛЯНКА" title="СОЛЯНКА">
+                <h3 class="menu-product__item-title">СОЛЯНКА</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="menu-product__item"><img class="menu-product__item-img" src="images/menu-product__img-iten-03.png" alt="БОРЩ" title="БОРЩ">
+                <h3 class="menu-product__item-title">БОРЩ</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="menu-product__item"><img class="menu-product__item-img" src="images/menu-product__img-iten-04.png" alt="МИТБОЛЫ ИЗ ГОВЯДИНЫ" title="МИТБОЛЫ ИЗ ГОВЯДИНЫ">
+                <h3 class="menu-product__item-title">МИТБОЛЫ <br>ИЗ ГОВЯДИНЫ</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="menu-product__item"><img class="menu-product__item-img" src="images/menu-product__img-iten-05.png" alt="МА ПО ТОФУ" title="МА ПО ТОФУ">
+                <h3 class="menu-product__item-title">МА ПО ТОФУ</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="menu-product__item"><img class="menu-product__item-img" src="images/menu-product__img-iten-06.png" alt="ТОМ ЯМ" title="ТОМ ЯМ">
+                <h3 class="menu-product__item-title">ТОМ ЯМ</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="menu-product__item"><img class="menu-product__item-img" src="images/menu-product__img-iten-07.png" alt="ТОМ КХА" title="ТОМ КХА">
+                <h3 class="menu-product__item-title">ТОМ КХА</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="menu-product__item"><img class="menu-product__item-img" src="images/menu-product__img-iten-08.png" alt="МИТБОЛЫ ИЗ КУРИЦЫ" title="МИТБОЛЫ ИЗ КУРИЦЫ">
+                <h3 class="menu-product__item-title">МИТБОЛЫ <br>ИЗ КУРИЦЫ</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="menu-product__item"><img class="menu-product__item-img" src="images/menu-product__img-iten-09.png" alt="МИСО" title="МИСО">
+                <h3 class="menu-product__item-title">МИСО</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="menu-product__item"><img class="menu-product__item-img" src="images/menu-product__img-iten-10.png" alt="ФО БО" title="ФО БО">
+                <h3 class="menu-product__item-title">ФО БО</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="menu-product__item"><img class="menu-product__item-img" src="images/menu-product__img-iten-11.png" alt="ПЕЛЬМЕНИ ОРЕХОВЫЕ" title="ПЕЛЬМЕНИ ОРЕХОВЫЕ">
+                <h3 class="menu-product__item-title">ПЕЛЬМЕНИ <br>ОРЕХОВЫЕ</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="menu-product__item"><img class="menu-product__item-img" src="images/menu-product__img-iten-12.png" alt="ФИШБОЛЫ ИЗ ЛОСОСЯ" title="ФИШБОЛЫ ИЗ ЛОСОСЯ">
+                <h3 class="menu-product__item-title">ФИШБОЛЫ<br>ИЗ ЛОСОСЯ</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="to-get" id="where-to-ge">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="to-get__body">
+                <h2 class="h2">ГДЕ МОЖНО ПРИОБРЕСТИ?</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="to-get__top">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="to-get__item"><img class="to-get__item-img" src="images/to-get__img-iten-01.png" alt="МАГАЗИН">
+                  <p class="to-get__item-text">в магазинах спортивного питания</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="to-get__item"><img class="to-get__item-img" src="images/to-get__img-iten-02.png" alt="ФИТНЕС-КЛУБЫ">
+                  <p class="to-get__item-text">в фитнес&#8209;клубах и спортшколах</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="to-get__item"><img class="to-get__item-img" src="images/to-get__img-iten-03.png" alt="МАГАЗИНЫ ЗДОРОВОЙ ЕДЫ">
+                  <p class="to-get__item-text">в магазинах <br>здоровой еды</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="to-get__item"><img class="to-get__item-img" src="images/to-get__img-iten-04.png" alt="">
+                  <p class="to-get__item-text">В ИНТЕРНЕТ-МАГАЗИНЕ <a class="link" href="www.nazarov-fitness.com" target="_blank">www.nazarov&#8209;fitness.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="contacts" id="contacts">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-7">
+              <div class="contacts-left">
+                <div class="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.9080233865448!2d37.54976351625645!3d55.65580868052758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54d28b73d61eb%3A0x27d8265861a8450a!2z0J7QpNCY0KHQndCr0Jkg0KbQldCd0KLQoCAi0J3QkCDQndCQ0KPQp9Cd0J7QnCI!5e0!3m2!1sru!2sru!4v1587457764348!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="contacts-right">
+                <p class="h2">КАК С&nbsp;НАМИ СВЯЗАТЬСЯ</p>
+                <p class="text contacts__bottom-text">По&nbsp;всем вопросам приобретения продукции Назаров Фитнес обращаться:</p>
+                <div class="contacts__adress">
+                  <p class="contacts__adress-title">Адрес представительства в&nbsp;Москве:</p>
+                  <p class="text">Научный проезд, д.8 с1, офис 540. БЦ&nbsp;&laquo;На&nbsp;Научном&raquo;</p>
+                  <p class="contacts__adress-title">По телефону: <a class="text" href="tel:+74959227206">+7(495) 922-72-06</a></p>
+                  <p class="contacts__adress-title">Email: <a class="text" href="mailto:nazarov.fitness@gmail.com ">nazarov.fitness@gmail.com</a></p>
+                  <p class="contacts__adress-title">Адрес производства в&nbsp;Златоусте:</p>
+                  <p class="text">ул. Косотурская, д.&nbsp;17</p>
+                  <p class="contacts__adress-title">тел. <a class="text" href="tel:+73513620067">+7(3513) 62-00-67</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <p class="lead">&copy;&nbsp;2020 Франшиза Назаров&nbsp;Фитнес</p>
+          <p class="text">| телефон <a class="link" href="tel:+74959227206">8 (495) 922-72-96 </a>| e&#8209;mail:&nbsp;<a class="link" href="mailto:nazarov.fitness@gmail.com">nazarov.fitness@gmail.com</a></p>
+        </div>
+      </footer>
+      <div class="modal modal-form" id="modal_contact">
+        <div class="modal-form__body">
+          <p class="modal-form__title">Стать дистрибьютором</p><span class="modal-form__text">Если вы хотите стать эксклюзивным дистрибьютором назаров фитнесс в своем городе заполните, пожалуйста, форму:</span>
+          <div class="form">
+            <form class="form__form" id="distributor">
+              <div class="form__group">
+                      <div class="input">
+                        <label for="name_1">ФИО</label>
+                        <input class="input__input" type="text" name="name_1" id="name_1">
+                      </div>
+              </div>
+              <div class="form__group">
+                      <div class="input">
+                        <label for="city_1">Город</label>
+                        <input class="input__input" type="text" name="city_1" id="city_1">
+                      </div>
+              </div>
+              <div class="form__group">
+                      <div class="input">
+                        <label for="email_1">E-mail</label>
+                        <input class="input__input" type="email" name="email_1" id="email_1">
+                      </div>
+              </div>
+              <div class="form__group">
+                      <div class="input input--phone">
+                        <label for="tel_1">Телефон</label>
+                        <input class="input__input" type="tel" name="tel_1" id="tel_1">
+                      </div>
+              </div>
+              <div class="form__group"><a class="btn btn--form modal-link" href="#modal_accepted" id="distributorLink" role="button"><span class="btn__text">ОТПРАВИТЬ</span></a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal-accepted" id="modal_accepted">
+        <div class="modal-form__body">
+          <p class="modal-form__title">Спасибо!</p><span class="modal-form__text">Ваша заявка принята <br>в&nbsp;ближайшее время мы&nbsp;с&nbsp;вами свяжемся</span>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>$(document).ready(function () {	svg4everybody({});});</script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
